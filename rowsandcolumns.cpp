@@ -50,7 +50,7 @@ int main() {
     cin.ignore();
     cout << "Enter input string: ";
     getline(cin,input);
-    int rows = input.length() / SIZE;
+    int rows = (input.length()+SIZE-1) / SIZE;
     vector<vector<char>> str(rows, vector<char>(SIZE, ' '));
 
     for (int i = 0; i < rows; i++) {
